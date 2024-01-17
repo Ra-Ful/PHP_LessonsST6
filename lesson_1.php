@@ -20,7 +20,8 @@ echo "Cлучайное число= ".rand(1,10);
 function calc($a,$b){
     return $a+$b;
 }
-
+//Типы данных
+//$i=int(целые числа)
 
 
 
