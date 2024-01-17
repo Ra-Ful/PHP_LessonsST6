@@ -45,3 +45,18 @@ for($counter=0;$counter<10;$counter++){
     echo '$counter='.$counter;
     echo '<br>';
 }
+
+while($i<10){
+    echo '$i='.$i;
+    echo '<br>';
+    $i++;
+}
+
+$i=0;
+do{
+    echo '$i='.$i;
+    echo '<br>';
+    $i++;
+
+} while ($i<10);
+
