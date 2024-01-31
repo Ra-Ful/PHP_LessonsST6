@@ -55,3 +55,13 @@ for($i=0;$i<=1000;$i++){
 }
 echo "<hr>";
 echo $su;
+
+$T=array();
+for($i=1;$i<=6;$i++){
+    $T[$i]=0;
+}
+
+for($i=1;$i<=1000;$i++){
+    $n=rand(1,6);
+    $T[$n]++;
+} var_dump($T);
