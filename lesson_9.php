@@ -50,6 +50,7 @@ if (isset($_SESSION["login"])==NULL){
     $_SESSION['login'] = $_POST['login'];
 }
 */
+session_start();
 if(isset($_POST['login'])){
     $_SESSION['login']= $_POST['login'];
 } 
