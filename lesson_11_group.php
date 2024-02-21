@@ -16,13 +16,13 @@
     <a href="?razdel=main">Вернуться на главную</a><br>
     <?php 
     //покажем список товара из этой группы!
-    foreach($group[$group_name] as $tovar){
+    foreach($group [$group_name] as $tovar){
         ?> 
         <div class="tovar">
             <div class="tovar_name"><?php echo $tovar['name'];?></div>
             <div class="tovar_cost"><?php echo $tovar['cost'];?></div>
             <a href="?razdel=item&name=<?php echo urldecode($group_name);?>
-&name_tova=<?php echo urldecode($tovar['name']); ?>
+&name_tovar=<?php echo urldecode($tovar['name']); ?>
 &cost=<?php echo urldecode($tovar['cost']); ?>" >Купить</a>
 
         </div>
