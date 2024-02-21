@@ -1,6 +1,6 @@
 <?php
+session_start();
 include ("lesson_11_tovar.php");
-//var_dump($group);
 
 
 $razdel = '';
@@ -14,7 +14,12 @@ if($razdel==''|| $razdel=='main'){
 if($razdel=='group'){// Группы товара
     include("lesson_11_group.php");
 }
-
+if($razdel=='item'){
+    include("lesson_11_item.php");
+}
+if ($razdel=='order'){
+    include("lesson_11_order.php");
+}
 
 
 
