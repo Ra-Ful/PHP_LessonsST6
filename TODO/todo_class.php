@@ -4,9 +4,9 @@ class Todo
     private $db;
     const DATABASE = 'ToDo';
     const USERNAME = 'root';
-    const PASSWORD = ' ';
+    const PASSWORD = '';
 
-    function __construct()
+    public function __construct()
     {
         $this->db=mysqli_connect("localhost", self::USERNAME, self::PASSWORD, self::DATABASE);
         $this->db->set_charset("utf8");
