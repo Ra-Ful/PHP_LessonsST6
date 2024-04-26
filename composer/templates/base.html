@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% block head%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}Заголовок страницы не указан{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="content">{%block content%}влловпокко{% endblock %}</div>
+    <div id="footer"> {% block footer %}нижн част  страницы {% endblock %}
+
+    </div>
+
+</body>
+</html>

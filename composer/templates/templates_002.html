@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Заголовок страницы Page - 01{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #d81da9; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Заголовок в содержимом</h1>
+    <p class="important">
+        Текст на странице
+    </p>
+{% endblock %}
